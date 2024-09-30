@@ -1,0 +1,9 @@
+.pressed {
+  color: var(--fallback-b1, oklch(var(--b1) / 1));
+
+  background-color: var(--fallback-p, oklch(var(--p) / 1));
+}
+
+.keycap {
+  border-color: var(--fallback-p, oklch(var(--p) / 1));
+}

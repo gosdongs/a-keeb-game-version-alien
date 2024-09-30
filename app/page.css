@@ -1,0 +1,27 @@
+.blink {
+  animation: blink-animation 1s infinite;
+}
+
+.loss-reason {
+  color: oklch(var(--er));
+}
+
+.timerDot {
+  background-color: var(--fallback-p, oklch(var(--p) / 1));
+
+  border-color: var(--fallback-p, oklch(var(--p) / 1));
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
